@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.linhas{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100vw;
+}
+
+.linhas div{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
