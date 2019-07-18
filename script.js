@@ -36,7 +36,7 @@ function velha(){
         if(campos[i].innerHTML != ""){
             j++
             if(j == campos.length){
-                alert("velha");
+                alert("Caracolis  deu velha !!!");
             }
         }
         
@@ -52,39 +52,39 @@ function clicar() {
 
 function validar() {
     if (campos[0].innerHTML == "X" && campos[1].innerHTML == "X" && campos[2].innerHTML == "X") {
-        alert("vc")
+        alert("jogador X ganhou!!!")
     } else if (campos[3].innerHTML == "X" && campos[4].innerHTML == "X" && campos[5].innerHTML == "X") {
-        alert("vc")
+        alert("jogador X ganhou!!!")
     } else if (campos[6].innerHTML == "X" && campos[7].innerHTML == "X" && campos[8].innerHTML == "X") {
-        alert("vc")
+        alert("jogador X ganhou!!!")
     } else if (campos[0].innerHTML == "X" && campos[3].innerHTML == "X" && campos[6].innerHTML == "X") {
-        alert("vc")
+        alert("jogador X ganhou!!!")
     } else if (campos[1].innerHTML == "X" && campos[4].innerHTML == "X" && campos[7].innerHTML == "X") {
-        alert("vc")
+        alert("jogador X ganhou!!!")
     } else if (campos[2].innerHTML == "X" && campos[5].innerHTML == "X" && campos[8].innerHTML == "X") {
-        alert("vc")
+        alert("jogador X ganhou!!!")
     } else if (campos[0].innerHTML == "X" && campos[4].innerHTML == "X" && campos[8].innerHTML == "X") {
-        alert("vc")
+        alert("jogador X ganhou!!!")
     } else if (campos[2].innerHTML == "X" && campos[4].innerHTML == "X" && campos[6].innerHTML == "X") {
-        alert("vc")
+        alert("jogador X ganhou!!!")
     }
     //  validação bolinha
     else if (campos[0].innerHTML == "O" && campos[1].innerHTML == "O" && campos[2].innerHTML == "O") {
-        alert("vc")
+        alert("jogador O ganhou!!!")
     } else if (campos[3].innerHTML == "O" && campos[4].innerHTML == "O" && campos[5].innerHTML == "O") {
-        alert("vc")
+        alert("jogador O ganhou!!!")
     } else if (campos[6].innerHTML == "O" && campos[7].innerHTML == "O" && campos[8].innerHTML == "O") {
-        alert("vc")
+        alert("jogador O ganhou!!!")
     } else if (campos[0].innerHTML == "O" && campos[3].innerHTML == "O" && campos[6].innerHTML == "O") {
-        alert("vc")
+        alert("jogador O ganhou!!!")
     } else if (campos[1].innerHTML == "O" && campos[4].innerHTML == "O" && campos[7].innerHTML == "O") {
-        alert("vc")
+        alert("jogador O ganhou!!!")
     } else if (campos[2].innerHTML == "O" && campos[5].innerHTML == "O" && campos[8].innerHTML == "O") {
-        alert("vc")
+        alert("jogador O ganhou!!!")
     } else if (campos[0].innerHTML == "O" && campos[4].innerHTML == "O" && campos[8].innerHTML == "O") {
-        alert("vc")
+        alert("jogador O ganhou!!!")
     } else if (campos[2].innerHTML == "O" && campos[4].innerHTML == "O" && campos[6].innerHTML == "O") {
-        alert("vc")
+        alert("jogador O ganhou!!!")
     }else{
         velha();
     }
