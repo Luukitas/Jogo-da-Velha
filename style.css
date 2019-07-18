@@ -16,6 +16,27 @@ nav p {
     font-family: 'Press Start 2P', cursive;
     font-size: 22pt;
 }
+
+.placar{
+    align-items: center;
+    border-bottom: rgba(0, 0, 0, .8) solid 1px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px 0;
+}
+
+.valores{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.valores div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 section{
     display: flex;
     flex-direction: column;
