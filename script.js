@@ -19,9 +19,13 @@ function jogar() {
 
 
 function mudaValor(event) {
-    event.target.innerHTML = valor;
-    jogar();
-    validar();
+    // if permite que o usuario não mude o X para O depois
+    if(event.target.innerHTML == ""){
+        event.target.innerHTML = valor;
+        jogar();
+        validar();
+    }
+    
 }
 
 function clicar() {
