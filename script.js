@@ -28,6 +28,21 @@ function mudaValor(event) {
     
 }
 
+// codigo verifica se todo array esta cheio 
+//usado na condição de empate no jogo - "velha"
+function velha(){
+    let j = 0;
+    for (let i = 0; i <= campos.length - 1; i++){
+        if(campos[i].innerHTML != ""){
+            j++
+            if(j == campos.length){
+                alert("velha");
+            }
+        }
+        
+    }
+}
+
 function clicar() {
     for (let campo of campos) {
         campo.onclick = mudaValor;
@@ -70,6 +85,8 @@ function validar() {
         alert("vc")
     } else if (campos[2].innerHTML == "O" && campos[4].innerHTML == "O" && campos[6].innerHTML == "O") {
         alert("vc")
+    }else{
+        velha();
     }
 }
 
