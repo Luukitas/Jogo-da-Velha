@@ -25,9 +25,8 @@ function mudaValor(event) {
         jogar();
         validar();
     }
-    if(jogadas >= 10 && validar.call() == false){
+    if(jogadas == 10){
         alert('Deu velha');
-        limpar();
     }
 }
 
@@ -106,17 +105,7 @@ function impedeClick(){
 
 function limpar(){
     for(let campo of campos){
-        campo.onclick = initial;
-    }
-}
-
-
-
-function val() {
-    if (jogadas = 10) {
-        validar();
-    } else {
-        alert('Deu velha');
+        campo.innerHTML = "";
     }
 }
 
