@@ -1,6 +1,7 @@
 body{
-    margin: 0;
     background-color: #e1e9e8;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 nav{
     background-color: #0b423f;
@@ -13,7 +14,6 @@ nav{
 nav p {
     margin: 0;
     color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 26pt;
     font-weight: bold; 
 }
@@ -22,21 +22,26 @@ section{
     flex-direction: column;
     height: 70vh;
     justify-content: center;
-    width: 100vw;
 }
 .linhas{
     display: flex;
     justify-content: center;
+    margin: 0;
     /* height: 100px;
     width: 100vw; */
     height: 100%;
-    width: 100vw;
+    width: 100%;
 }
 .linhas div{
+    align-items: center;
     border: 1px solid black;
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+    font-size: 10em;
     /* height: 100px;
     width: 100px; */
     height: 100%;
+    justify-content: center;
     width: 170px;
 }
 footer{
@@ -50,7 +55,6 @@ footer{
 }
 footer p{
     color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 12pt;
 }
 .p1{
