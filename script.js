@@ -135,5 +135,15 @@ function limpar(){
     } 
 }
 
+function recomecar(){
+    limpar();
+    jog1 == true;
+    jog2 == false;
+    placar1 = 0;
+    placar2 = 0;
+    valorX.innerHTML == placar1.toString();
+    valorO.innerHTML == placar2.toString(); 
+}
+
 
 clicar();
