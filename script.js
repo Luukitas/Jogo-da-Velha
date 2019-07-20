@@ -61,96 +61,98 @@ function clicar() {
 
 function validar() {
     if (campos[0].innerHTML == "X" && campos[1].innerHTML == "X" && campos[2].innerHTML == "X") {
-        alert("jogador X ganhou!!!")
-        // placar1++;
-        // valorX.innerHTML = placar1.toString()
-        ocultar();
+        alert("jogador X ganhou a partida!!!");
+        placar1++;
+        valorX.innerHTML = placar1.toString();
+        ocultarClick();
     } else if (campos[3].innerHTML == "X" && campos[4].innerHTML == "X" && campos[5].innerHTML == "X") {
-        alert("jogador X ganhou!!!")
-        // placar1++;
-        // valorX.innerHTML = placar1.toString()
-        ocultar();
+        alert("jogador X ganhou a partida!!!");
+        placar1++;
+        valorX.innerHTML = placar1.toString();
+        ocultarClick();
     } else if (campos[6].innerHTML == "X" && campos[7].innerHTML == "X" && campos[8].innerHTML == "X") {
-        alert("jogador X ganhou!!!")
-        // placar1++;
-        // valorX.innerHTML = placar1.toString()
-        ocultar();
+        alert("jogador X ganhou a partida!!!");
+        placar1++;
+        valorX.innerHTML = placar1.toString();
+        ocultarClick();
     } else if (campos[0].innerHTML == "X" && campos[3].innerHTML == "X" && campos[6].innerHTML == "X") {
-        alert("jogador X ganhou!!!")
-        // placar1++;
-        // valorX.innerHTML = placar1.toString()
-        ocultar();
+        alert("jogador X ganhou a partida!!!");
+        placar1++;
+        valorX.innerHTML = placar1.toString();
+        ocultarClick();
     } else if (campos[1].innerHTML == "X" && campos[4].innerHTML == "X" && campos[7].innerHTML == "X") {
-        alert("jogador X ganhou!!!")
-        // placar1++;
-        // valorX.innerHTML = placar1.toString()
-        ocultar();
+        alert("jogador X ganhou a partida!!!");
+        placar1++;
+        valorX.innerHTML = placar1.toString();
+        ocultarClick();
     } else if (campos[2].innerHTML == "X" && campos[5].innerHTML == "X" && campos[8].innerHTML == "X") {
-        alert("jogador X ganhou!!!")
-        // placar1++;
-        // valorX.innerHTML = placar1.toString()
-        ocultar();
+        alert("jogador X ganhou a partida!!!");
+        placar1++;
+        valorX.innerHTML = placar1.toString();
+        ocultarClick();
     } else if (campos[0].innerHTML == "X" && campos[4].innerHTML == "X" && campos[8].innerHTML == "X") {
-        alert("jogador X ganhou!!!")
-        // placar1++;
-        // valorX.innerHTML = placar1.toString()
-        ocultar();
+        alert("jogador X ganhou a partida!!!");
+        placar1++;
+        valorX.innerHTML = placar1.toString();
+        ocultarClick();
     } else if (campos[2].innerHTML == "X" && campos[4].innerHTML == "X" && campos[6].innerHTML == "X") {
-        alert("jogador X ganhou!!!")
-        // placar1++;
-        // valorX.innerHTML = placar1.toString()
-        ocultar();
+        alert("jogador X ganhou a partida!!!");
+        placar1++;
+        valorX.innerHTML = placar1.toString();
+        ocultarClick();
     }
     //  validação bolinha
     else if (campos[0].innerHTML == "O" && campos[1].innerHTML == "O" && campos[2].innerHTML == "O") {
-        alert("jogador O ganhou!!!")
-        // placar2++;
-        // valorO.innerHTML = placar2.toString()
-        ocultar();
+        alert("jogador O ganhou a partida!!!");
+        placar2++;
+        valorO.innerHTML = placar2.toString();
+        ocultarClick();
     } else if (campos[3].innerHTML == "O" && campos[4].innerHTML == "O" && campos[5].innerHTML == "O") {
-        alert("jogador O ganhou!!!")
-        // placar2++;
-        // valorO.innerHTML = placar2.toString()
-        ocultar();
+        alert("jogador O ganhou a partida!!!");
+        placar2++;
+        valorO.innerHTML = placar2.toString();
+        ocultarClick();
     } else if (campos[6].innerHTML == "O" && campos[7].innerHTML == "O" && campos[8].innerHTML == "O") {
-        alert("jogador O ganhou!!!")
-        // placar2++;
-        // valorO.innerHTML = placar2.toString()
-        ocultar();
+        alert("jogador O ganhou a partida!!!");
+        placar2++;
+        valorO.innerHTML = placar2.toString();
+        ocultarClick();
     } else if (campos[0].innerHTML == "O" && campos[3].innerHTML == "O" && campos[6].innerHTML == "O") {
-        alert("jogador O ganhou!!!")
-        // placar2++;
-        // valorO.innerHTML = placar2.toString()
-        ocultar();
+        alert("jogador O ganhou a partida!!!");
+        placar2++;
+        valorO.innerHTML = placar2.toString();
+        ocultarClick();
     } else if (campos[1].innerHTML == "O" && campos[4].innerHTML == "O" && campos[7].innerHTML == "O") {
-        alert("jogador O ganhou!!!")
-        // placar2++;
-        // valorO.innerHTML = placar2.toString()
-        ocultar();
+        alert("jogador O ganhou a partida!!!");
+        placar2++;
+        valorO.innerHTML = placar2.toString();
+        ocultarClick();
     } else if (campos[2].innerHTML == "O" && campos[5].innerHTML == "O" && campos[8].innerHTML == "O") {
-        alert("jogador O ganhou!!!")
-        // placar2++;
-        // valorO.innerHTML = placar2.toString()
-        ocultar();
+        alert("jogador O ganhou a partida!!!");
+        placar2++;
+        valorO.innerHTML = placar2.toString();
+        ocultarClick();
     } else if (campos[0].innerHTML == "O" && campos[4].innerHTML == "O" && campos[8].innerHTML == "O") {
-        alert("jogador O ganhou!!!")
-        // placar2++;
-        // valorO.innerHTML = placar2.toString()
-        ocultar();
+        alert("jogador O ganhou a partida!!!");
+        placar2++;
+        valorO.innerHTML = placar2.toString();
+        ocultarClick();
     } else if (campos[2].innerHTML == "O" && campos[4].innerHTML == "O" && campos[6].innerHTML == "O") {
-        alert("jogador O ganhou!!!")
-        // placar2++;
-        // valorO.innerHTML = placar2.toString()
-        ocultar();
+        alert("jogador O ganhou a partida!!!");
+        placar2++;
+        valorO.innerHTML = placar2.toString();
+        ocultarClick();
     }else{
         velha();
     }
 }
 
-function ocultar(){
+function ocultarClick(){
     for(let campo of campos){
         //impede o click dps
         campo.onclick = null;
+        jog1 = true;
+        jog2 = false;
     } 
 }
 
@@ -164,11 +166,15 @@ function limpar(){
 
 function recomecar(){
     limpar();
+    if(placar1 > placar2){
+        alert('Jogador X ganhou o jogo');
+    }else{
+        alert('Jogador O ganhou o jogo');
+    }
     placar1 = 0;
     placar2 = 0;
-    valorX.innerHTML == "0";
-    valorO.innerHTML == "0"; 
+    valorX.innerHTML = placar1.toString();
+    valorO.innerHTML = placar2.toString(); 
 }
-
 
 clicar();
