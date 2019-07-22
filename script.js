@@ -29,7 +29,6 @@ function mudaValor(event) {
     // if permite que o usuario não mude o X para O depois
     if(event.target.innerHTML == ""){
         event.target.innerHTML = valor;
-        // event.target.style.backgroundColor = "red";
         jogar();
         validar();
     }
@@ -64,9 +63,6 @@ function validar() {
     if (campos[0].innerHTML == "X" && campos[1].innerHTML == "X" && campos[2].innerHTML == "X") {
         alert("jogador X ganhou a partida!!!");
         placar1++;
-        campos[0].style.backgroundColor = "red";
-        campos[1].style.backgroundColor = "red";
-        campos[2].style.backgroundColor = "red";
         valorX.innerHTML = placar1.toString();
         ocultarClick();
     } else if (campos[3].innerHTML == "X" && campos[4].innerHTML == "X" && campos[5].innerHTML == "X") {
@@ -148,11 +144,7 @@ function validar() {
         ocultarClick();
     }else{
         velha();
-   }
-
-}
-function fundo(event){
-    event.target.style.backgroundColor = "red";
+    }
 }
 
 function ocultarClick(){
