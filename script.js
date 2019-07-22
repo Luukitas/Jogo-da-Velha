@@ -29,6 +29,7 @@ function mudaValor(event) {
     // if permite que o usuario não mude o X para O depois
     if(event.target.innerHTML == ""){
         event.target.innerHTML = valor;
+        // event.target.style.backgroundColor = "red";
         jogar();
         validar();
     }
@@ -63,6 +64,9 @@ function validar() {
     if (campos[0].innerHTML == "X" && campos[1].innerHTML == "X" && campos[2].innerHTML == "X") {
         alert("jogador X ganhou a partida!!!");
         placar1++;
+        campos[0].style.backgroundColor = "red";
+        campos[1].style.backgroundColor = "red";
+        campos[2].style.backgroundColor = "red";
         valorX.innerHTML = placar1.toString();
         ocultarClick();
     } else if (campos[3].innerHTML == "X" && campos[4].innerHTML == "X" && campos[5].innerHTML == "X") {
@@ -144,12 +148,16 @@ function validar() {
         ocultarClick();
     }else{
         velha();
-    }
+   }
+
+}
+function fundo(event){
+    event.target.style.backgroundColor = "red";
 }
 
 function ocultarClick(){
     for(let campo of campos){
-        //impede o click dps
+        //impede o click depois da vitoria
         campo.onclick = null;
         jog1 = true;
         jog2 = false;
@@ -168,8 +176,10 @@ function recomecar(){
     limpar();
     if(placar1 > placar2){
         alert('Jogador X ganhou o jogo');
-    }else{
+    }else if(placar2 > placar1){
         alert('Jogador O ganhou o jogo');
+    }else{
+        alert('O jogo ficou empatado')
     }
     placar1 = 0;
     placar2 = 0;
